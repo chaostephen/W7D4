@@ -29,6 +29,13 @@
 	ul {
 		display: flex;
 	}
+	
+	li {
+		padding: 5px;
+	}
+	ul > li:first-of-type {
+		font-weight: 600;
+	}
 }
 
 .logo {
@@ -36,17 +43,20 @@
 	margin-top: 10px;
 }
 
-.masthead-links {
+.masthead-links ul {
 	display: flex;
 	font-family: $sans-serif;
+	justify-content: space-between;
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	// padding: 15px;
 	align-items: center;
 
 	li {
 		margin-left: 10px;
 		border-right: 1px solid $light-gray;
+		padding: 5px;
 	}
 
 	button {

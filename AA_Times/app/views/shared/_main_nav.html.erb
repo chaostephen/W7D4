@@ -17,9 +17,12 @@
 	</nav>
     <nav class="right-nav">
     <ul>
-      <li><input type="button" value="Subscribe Now"></li>
-      <li><input type="button" value="Log In"></li>
-      <li><i class="fa-solid fa-gear"></i></li>
+      <li><button class ="button">Subscribe Now</button></li>
+      <li><button class ="button">Log In </button></li>
+    
+      <li id = "gear-icon"><i class="fa-solid fa-gear"></i>
+          <%= render partial: 'shared/gear_dropdown' %>
+      </li>
     </ul>
     </nav>
 </header>

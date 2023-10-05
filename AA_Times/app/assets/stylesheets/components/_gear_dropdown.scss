@@ -1,3 +1,33 @@
 // Use the gear_dropdown.png screenshot as a style guide
 
 @use '../variables' as *;
+
+#gear-icon {
+    position: relative;
+}
+.gear-dropdown {
+    position: absolute;
+    display: none;
+    background-color: lightblue;
+    width: 100px;
+    right: -50px;
+    z-index: 10;
+    // align-items: center;
+    justify-content: left;
+    align-content: start;
+    border: 1px solid lightgrey ;
+    ul 
+    {
+        
+        display:flex;
+        flex-direction: column;
+        // align-items: left;
+        // justify-content: left;
+        
+        
+    }
+
+}
+#gear-icon:hover .gear-dropdown {
+    display: block;
+}
