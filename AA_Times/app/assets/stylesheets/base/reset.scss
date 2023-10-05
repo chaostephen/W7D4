@@ -5,27 +5,29 @@ ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
-  // margin:
-  // padding:
-  // border:
-  // outline:
-  // font:
-  // color:
-  // text-align:
-  // text-decoration:
-  // vertical-align:
-  // box-sizing:
-  // background:
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: inherit;
+   color: black;
+    vertical-align: baseline;
+  text-align: inherit; // What do we do here ?
+  text-decoration:none;
+  
+  background: white;
 }
 
 ol, ul {
-  // list-style:
+  list-style: none;
 }
 
 img {
-  // display:
-  // width:
-  // height:
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 input[type="password"],
@@ -45,11 +47,18 @@ button {
 
 button,
 input[type="submit"] {
-  // cursor:
+  cursor: pointer;
 }
 
 /* Clearfix */
 
 .group:after {
-  // ...
+  // Copy paste from https://www.w3schools.com/css/css_float_clear.asp
+  content: "";
+  clear: both;
+  display: table;
+  //  Old school way of doing it .. Also how do we end up using this ? 
+  // .clearfix {
+  //   overflow: auto;
+  // } 
 }
